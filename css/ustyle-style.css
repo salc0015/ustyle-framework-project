@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 /***
     The new CSS reset - version 1.11.3 (last updated 25.08.2024)
     GitHub page: https://github.com/elad2412/the-new-css-reset
@@ -85,6 +87,14 @@ meter {
 
 ::-webkit-details-marker {
   display: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Rethink Sans", sans-serif;
 }
 
 /*# sourceMappingURL=ustyle-style.css.map */
