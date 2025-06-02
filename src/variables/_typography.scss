@@ -1,6 +1,7 @@
+@use './theme' as theme;
+
 $font-family-body: "Roboto", sans-serif;
 $font-family-heading: "Rethink Sans", sans-serif;
-
 
 body {
     font-family: $font-family-body;
