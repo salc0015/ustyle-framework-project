@@ -748,4 +748,44 @@ h6 {
   font-size: 1rem;
 }
 
+.bg-primary {
+  background-color: #1C2541;
+}
+
+.bg-secondary {
+  background-color: #B2AEED;
+}
+
+.bg-danger {
+  background-color: #8A2525;
+}
+
+.bg-success {
+  background-color: #A5C600;
+}
+
+.bg-info {
+  background-color: #647AA3;
+}
+
+.bg-warning {
+  background-color: #EDC65F;
+}
+
+.bg-pink {
+  background-color: #ED5F8B;
+}
+
+.bg-dark {
+  background-color: #F4F6FC;
+}
+
+.bg-light {
+  background-color: #252628;
+}
+
+.bg-gray {
+  background-color: #96999E;
+}
+
 /*# sourceMappingURL=ustyle-style.css.map */
