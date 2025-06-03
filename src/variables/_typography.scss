@@ -1,12 +1,80 @@
+@use "sass:map";
 @use './theme' as theme;
+@use './sizing' as sizing;
 
+// Typography Variables
+// Font Families
 $font-family-body: "Roboto", sans-serif;
 $font-family-heading: "Rethink Sans", sans-serif;
 
+// Font Weights
+$fw-black: 900;
+$fw-extrabold: 800;
+$fw-bold: 700;
+$fw-semibold: 600;
+$fw-medium: 500;
+$fw-regular: 400;
+$fw-light: 300;
+$fw-extralight: 200;
+$fw-thin: 100;
+
+// Line Heights
+$line-height-base: 1.6;
+$line-height-heading: 1.2;
+
+// Generate text color utility classes
+@each $name, $color in theme.$theme {
+    .text-#{$name}{
+        color: #{$color};
+    }
+}
+
+// Font Sizes utilitie classes
+@each $key, $value in sizing.$sizes {
+    .font-sz-#{$key} {
+        font-size: $value;
+    }
+}
+
 body {
     font-family: $font-family-body;
+    font-weight: $fw-regular;
+    font-size: map.get(sizing.$sizes, "sm");
+    line-height: $line-height-base;
 }
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-family-heading;
+    line-height: $line-height-heading;
+}
+
+h1 { 
+    font-weight: $fw-black;
+    font-size: map.get(sizing.$sizes, "3xl");
+}
+
+h2 { 
+    font-weight: $fw-extrabold;
+    font-size: map.get(sizing.$sizes, "2xl");
+}
+
+h3 { 
+    font-weight: $fw-bold;
+    font-size: map.get(sizing.$sizes, "xl");
+}
+
+h4 { 
+    font-weight: $fw-semibold;
+    font-size: map.get(sizing.$sizes, "lg");
+}
+
+h5 { 
+    font-weight: $fw-medium;
+    font-size: map.get(sizing.$sizes, "md");
+}
+
+h6 { 
+    font-weight: $fw-regular;
+    font-size: map.get(sizing.$sizes, "sm");
 }
