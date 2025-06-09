@@ -1,0 +1,31 @@
+@use '../variables/colors' as colors;
+@use '../variables/sizing' as sizing;
+@use 'sass:map';
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-top: map.get(sizing.$spacing, 4); 
+  margin-bottom: map.get(sizing.$spacing, 4);
+}
+
+%thumbnail {
+  border-radius: map.get(sizing.$radius, md);
+  border: 3px solid colors.$pink;
+  padding: map.get(sizing.$spacing, 2);
+}
+
+.img-thumbnail {
+  @extend %thumbnail;
+}
+
+.img-avatar {
+  @extend %thumbnail;
+  border-radius: map.get(sizing.$radius, full);
+}
+
+.img-round {
+  border-radius: map.get(sizing.$radius, full);
+}
+
