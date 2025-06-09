@@ -1,0 +1,7 @@
+@use './sizing';
+
+@each $name, $radius in sizing.$radius {
+  .radius-#{$name} {
+    border-radius: #{$radius};
+  }
+}
