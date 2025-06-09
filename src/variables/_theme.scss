@@ -14,3 +14,11 @@ $theme: (
   "light": colors.$black,
   "gray": colors.$gray,
 );
+
+//List Variables
+$list-bullet: disc;
+$list-number: decimal;
+$list-alpha-lower: lower-alpha;
+$list-alpha-upper: upper-alpha;
+$list-roman-lower: lower-roman;
+$list-roman-upper: upper-roman;

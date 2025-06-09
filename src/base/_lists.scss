@@ -1,0 +1,20 @@
+@use 'sass:map';
+@use '../variables/theme' as theme;
+@use '../variables/sizing' as sizing;
+
+ul,
+ol,
+dl {
+    padding-left: map.get(sizing.$spacing, 4);
+    padding-right: map.get(sizing.$spacing, 4);
+    margin-top: map.get(sizing.$spacing, 2);
+    margin-bottom: map.get(sizing.$spacing, 2);
+}
+
+ul {
+    list-style-type: theme.$list-bullet;
+}
+
+ol {
+    list-style-type: theme.$list-number;
+}
