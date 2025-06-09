@@ -1,0 +1,48 @@
+@use 'sass:map';
+@use '../variables/theme' as theme;
+@use '../variables/sizing';
+@use '../variables/colors';
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: map.get(sizing.$spacing, 4);
+    max-width: 600px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: map.get(sizing.$spacing, 1);
+}
+
+input,
+textarea {
+    padding: map.get(sizing.$spacing, 3);
+    border: 1px solid colors.$gray;
+    border-radius: map.get(sizing.$radius, md);
+    font-family: inherit;
+    resize: vertical;
+    width: 100%;
+    box-sizing: border-box;
+
+    &:focus {
+        outline: none;
+        border-color: colors.$pink;
+    }
+}
+
+button[type="submit"] {
+    padding: map.get(sizing.$spacing, 3);
+    background-color: colors.$dark-blue;
+    color: colors.$white;
+    width: 120px;
+    text-align: center;
+    border: none;
+    border-radius: map.get(sizing.$radius, md);
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: colors.$light-blue;
+    }
+}
