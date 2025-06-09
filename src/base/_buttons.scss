@@ -1,0 +1,22 @@
+@use 'sass:map';
+@use '../variables/theme' as theme;
+@use '../variables/typography' as typography;
+
+@mixin button ($btn-bg-color: map.get(theme.$theme,"primary"), $btn-text-color: map.get(theme.$theme,"dark")) {
+    background-color: $btn-bg-color;
+    color: $btn-text-color;
+    display: inline-block;
+    padding: 5px 10px;
+    min-width: 120px;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: typography.$fw-regular;
+    text-decoration: none;
+}
+
+@each $key, $value in theme.$theme {
+    .btn-#{$key} {
+        @include button($value);
+    }
+}
