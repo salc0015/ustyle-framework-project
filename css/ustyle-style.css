@@ -635,6 +635,16 @@ meter {
   padding-bottom: 4rem;
 }
 
+.container {
+  width: 100%;
+  padding: 0.75rem;
+}
+
+section {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .text-primary {
   color: #1C2541;
 }
@@ -747,6 +757,136 @@ h5 {
 h6 {
   font-weight: 400;
   font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: #1C2541;
+  color: #F4F6FC;
+  display: inline-block;
+  padding: 5px 10px;
+  min-width: 120px;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background-color: #B2AEED;
+  color: #F4F6FC;
+  display: inline-block;
+  padding: 5px 10px;
+  min-width: 120px;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.btn-danger {
+  background-color: #8A2525;
+  color: #F4F6FC;
+  display: inline-block;
+  padding: 5px 10px;
+  min-width: 120px;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.btn-success {
+  background-color: #A5C600;
+  color: #F4F6FC;
+  display: inline-block;
+  padding: 5px 10px;
+  min-width: 120px;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.btn-info {
+  background-color: #647AA3;
+  color: #F4F6FC;
+  display: inline-block;
+  padding: 5px 10px;
+  min-width: 120px;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.btn-warning {
+  background-color: #EDC65F;
+  color: #F4F6FC;
+  display: inline-block;
+  padding: 5px 10px;
+  min-width: 120px;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.btn-pink {
+  background-color: #ED5F8B;
+  color: #F4F6FC;
+  display: inline-block;
+  padding: 5px 10px;
+  min-width: 120px;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.btn-dark {
+  background-color: #F4F6FC;
+  color: #F4F6FC;
+  display: inline-block;
+  padding: 5px 10px;
+  min-width: 120px;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.btn-light {
+  background-color: #252628;
+  color: #F4F6FC;
+  display: inline-block;
+  padding: 5px 10px;
+  min-width: 120px;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.btn-gray {
+  background-color: #96999E;
+  color: #F4F6FC;
+  display: inline-block;
+  padding: 5px 10px;
+  min-width: 120px;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 400;
+  text-decoration: none;
 }
 
 a {
