@@ -1,0 +1,21 @@
+@use "sass:map";
+@use "../variables/theme";
+@use "../variables/typography";
+
+a {
+    text-decoration: underline;
+    color: map.get(theme.$theme, "primary");
+    font-weight: typography.$fw-regular;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &[target="_blank"] {
+        color: map.get(theme.$theme, "success");
+        
+        &:before{
+        content: "→";
+        }
+    }
+}

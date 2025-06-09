@@ -3,14 +3,14 @@
 //primary, secondary, danger, success, info, dark, light
 
 $theme: (
-  primary: colors.$dark-blue,
-  secondary: colors.$purple,
-  danger: colors.$red,
-  success: colors.$green,
-  info: colors.$light-blue,
-  warning: colors.$yellow,
-  pink: colors.$pink,
-  dark: colors.$white,
-  light: colors.$black,
-  gray: colors.$gray,
+  "primary": colors.$dark-blue,
+  "secondary": colors.$purple,
+  "danger": colors.$red,
+  "success": colors.$green,
+  "info": colors.$light-blue,
+  "warning": colors.$yellow,
+  "pink": colors.$pink,
+  "dark": colors.$white,
+  "light": colors.$black,
+  "gray": colors.$gray,
 );
