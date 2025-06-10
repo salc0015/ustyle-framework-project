@@ -5,9 +5,9 @@
 @use '../variables/colors' as colors;
 
 table {
-  width: 100%;
+  width: map.get(sizing.$width, "full");
   border-collapse: collapse;
-  margin-bottom: 1.5rem;
+  margin-bottom: map.get(sizing.$spacing, 5);
 }
 
 th,
