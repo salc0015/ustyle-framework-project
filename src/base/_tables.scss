@@ -1,0 +1,28 @@
+@use 'sass:map';
+@use '../variables/theme';
+@use '../variables/typography';
+@use '../variables/sizing';
+@use '../variables/colors' as colors;
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+th,
+td {
+  padding: map.get(sizing.$spacing, 3, 4);
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: map.get(sizing.$spacing, 3);
+}
+
+th {
+  background-color: map.get(theme.$theme,"primary");
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: map.get(theme.$theme,"secondary");
+}
