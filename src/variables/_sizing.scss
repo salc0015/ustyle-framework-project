@@ -103,3 +103,94 @@ $radius: (
   xl: 1rem,
   full: 9999px
 );
+
+// Gap spacing
+.gap-0{ 
+  gap: 0; 
+}
+.gap-1{ 
+  gap: 0.25rem; 
+}
+.gap-2 { 
+  gap: 0.5rem; 
+}
+.gap-3 { 
+  gap: 0.75rem; 
+}
+.gap-4 { 
+  gap: 1rem; 
+}
+.gap-5 { 
+  gap: 1.5rem; 
+}
+.gap-6 { 
+  gap: 2rem; 
+}
+
+// Heights and widths for layout and design
+$fixed-sizes: (
+  50: 50px,
+  75: 75px,
+  100: 100px,
+  125: 125px,
+  150: 150px,
+  200: 200px,
+  250: 250px,
+  300: 300px
+);
+
+//Map for width
+$width: (
+  "full": 100%,
+  "half": 50%,
+  "quarter": 25%,
+  "auto": auto
+);
+
+$special-heights: (
+  auto: auto,
+  full: 100%,
+  screen: 100vh
+);
+
+$max-widths: (
+  full: 100%,
+  screen-sm: 640px,
+  screen-md: 768px,
+  screen-lg: 1024px,
+  screen-xl: 1280px
+);
+
+// Height utilities
+@each $key, $value in $fixed-sizes {
+  .h-#{$key} {
+    height: $value;
+  }
+}
+
+// Width utilities
+@each $key, $value in $fixed-sizes {
+  .w-#{$key} {
+    width: $value;
+  }
+}
+
+// Box utilities (width + height)
+@each $key, $value in $fixed-sizes {
+  .box-#{$key} {
+    width: $value;
+    height: $value;
+  }
+}
+
+@each $key, $value in $max-widths {
+  .max-w-#{$key} {
+    max-width: $value;
+  }
+}
+
+@each $key, $value in $special-heights {
+  .h-#{$key} {
+    height: $value;
+  }
+}

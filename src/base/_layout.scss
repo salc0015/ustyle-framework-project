@@ -2,7 +2,7 @@
 @use '../variables/sizing';
 
 .container {
-    width: 100%;
+    width: map.get(sizing.$width, "full");
     padding: map.get(sizing.$spacing, 3);
 }
 
